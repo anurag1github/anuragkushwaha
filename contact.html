@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+    <style>
+        * {
+            text-decoration: none;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            height: 100%;
+            overflow: hidden;
+            background: rgb(46, 44, 44);
+        }
+
+        .navbar .logo {
+            padding: 30px;
+            line-height: 50px;
+            font-family: ubuntu;
+            color: white;
+            font-size: 30px;
+        }
+
+        .navbar ul {
+            display: flex;
+            float: right;
+        }
+
+        .navbar ul li a {
+            color: rgb(189, 189, 189);
+            padding: 20px;
+        }
+
+        .navbar ul li a.active {
+            background-color: rgb(37, 37, 37);
+            color: white;
+        }
+
+        .navbar ul li a:hover {
+            color: cyan;
+            background-color: rgb(37, 37, 37);
+        }
+
+        .navbar ul li {
+            line-height: 50px;
+            font-family: ubuntu;
+            font-size: 20px;
+        }
+
+        .hero-image {
+            background-image: url('herooimg.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            height: 400px;
+            width: 100%;
+        }
+
+        .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+
+        .hero-text h1 {
+            padding-bottom: 20px;
+            font-size: 40px;
+        }
+
+        .hero-text p {
+            line-height: 25px;
+            font-size: 20px;
+        }
+
+
+        h1 {
+            margin: 10px;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        h3 {
+            font-size: 30px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .main_heading p {
+            color: black;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        .form {
+            display: block;
+            margin: 12px;
+            margin-top: 30px;
+            border: 2px solid black;
+            padding: 12px;
+        }
+
+        #btn {
+            cursor: pointer;
+            padding: 4px;
+            margin: 12px;
+            color: black;
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 6px;
+            font-size: 16px;
+            background-color: white;
+            font-family: ubuntu;
+        }
+
+        .form input,
+        textarea {
+            margin: 8px;
+            font-family: ubuntu;
+            padding: 3px;
+            border: 2px solid rgb(0, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Class</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <label class="logo">Crazyyy Notes</label>
+    </nav>
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>Study With Me</h1>
+            <p>Get notes of Science, Maths and Social Science of class 9 and 10.</p>
+        </div>
+    </div>
+    <div class="main_heading">
+        <h1>Let's talk about everything</h1>
+
+        <h3>Feel free to ask anything</h3>
+
+        <p>Have a doubt or suggestion to make? Feel free to ask anything. If you have any suggestions , please let me
+            know. Your suggestions are highly appreciated.</p>
+    </div>
+    <div class="form">
+        <h1>Fill the form below</h1>
+        <form action="no_action.php">
+            Full name: <input type="text" name="full_name"><br>
+
+            Contact number: <input type="number" name="contact"><br>
+
+            Email: <input type="email" name="email"><br>
+
+            Write your suggestion or query: <br><textarea name="write" cols="40" rows="4"></textarea><br>
+
+            <button id="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
