@@ -5,63 +5,149 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crazyyy Notes</title>
+    <title>Home</title>
+
+    <!-- CSS file -->
     <link rel="stylesheet" href="style.css">
+    <!-- Js file -->
+    <script src="script.js" defer></script>
+
+    <!-- Label Title Google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tsukimi+Rounded&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-    <nav class="navbar">
-        <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <label class="logo">Crazyyy Notes</label>
+    <nav id="navbar">
+        <div id="nav">
+            <div id="label-title">
+                <label id="title">Anurag Kushwaha</label>
+            </div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </a>
+              <div class="navbar-links">
+                <ul>
+                  <li><a href="/index.html" class="active">Home</a></li>
+                  <li><a href="/about.html">Regarding Myself</a></li>
+                  <li><a href="/contact.html">Drop me a line</a></li>
+                </ul>
+              </div>
+        </div>
     </nav>
-    <div class="hero-image">
-        <div class="hero-text">
-            <h1>Study With Me</h1>
-            <p>Get notes of Science, Maths and Social Science of class 9 and 10.</p>
-            <a href="#"><button id="btn">Contact Me</button></a>
+    <div id="main">
+        <div id="main-box">
+            <div id="main-box-description">
+                <h1>Heading</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci facilis deleniti excepturi modi
+                    perferendis quos minus autem ut reprehenderit nesciunt, nemo porro doloribus error.</p>
+            </div>
+            <div id="main-box-image">
+                <img src="blue img.png" alt="Main_image">
+            </div>
         </div>
     </div>
-    <div class="content">
-        <h1>Class 10(Term 2)</h1>
-        <div class="all-items">
-            <div class="items">
-                <h2>Carbon and it's Compounds</h2>
-                <a href="#">Click to get notes of the chapter!</a>
-                <div class="img">
-                    <img src="carbon compound.jfif" alt="Image Not Found">
+
+    <div id="subjects">
+        <div class="subject">
+            <div id="subject1">
+                <div class="subject-a">
+                    <a href="#" class="each-subject">
+                        <p>Mathematics</p>
+                        <img src="maths.webp" alt="Mathematics">
+                    </a>
                 </div>
             </div>
-            <div class="items">
-                <h2>Periodic classification of elements</h2>
-                <a href="#">Click to get notes of the chapter!</a>
-                <div class="img">
-                    <img src="periodic.png" alt="Image Not Found">
+            <div id="subject2">
+                <div class="subject-a">
+                    <a href="#" class="each-subject">
+                        <p>Physics</p>
+                        <img src="physics.webp" alt="Physics">
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="all-items2">
-            <div class="items">
-                <h2>Electricity</h2>
-                <a href="#">Click to get notes of the chapter!</a>
-                <div class="img">
-                    <img src="electricity.jfif" alt="Image Not Found">
+        <div class="subject">
+            <div id="subject3">
+                <div class="subject-a">
+                    <a href="#" class="each-subject">
+                        <p>Chemistry</p>
+                        <img src="chemistry.avif" alt="Chemistry">
+                    </a>
                 </div>
             </div>
-
-            <div class="items">
-                <h2>Magnetic effects of electric current</h2>
-                <a href="#">Click to get notes of the chapter!</a>
-                <div class="img">
-                    <img src="magnetic effects.png" alt="Image Not Found">
+            <div id="subject4">
+                <div class="subject-a">
+                    <a href="#" class="each-subject">
+                        <p>Computer Science</p>
+                        <img src="cs.jpg" alt="Computer Science">
+                    </a>
                 </div>
             </div>
-
+        </div>
+        <div class="subject">
+            <div id="subject5">
+                <div class="subject-a">
+                    <a href="#" class="each-subject">
+                        <p>English</p>
+                        <img src="english.jpg" alt="English">
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
+    <footer>
+        <div id="footer">
+            <div id="foot-links">
+                <a href="#">
+                    <img src="telegram logo.png">
+                    Telegram
+                </a>
+                <!-- <a href="#">
+                    <img src="instagram logo.png">
+                    Instagram
+                </a>     -->
+            </div>
+            <p><b>MADE WITH ❤️</b><br>If you want to know about me,
+                <a href="/about.html">click here</a>
+            </p>
+            <span>Copyright&#169; 2023 | All rights reserved</span>
+        </div>
+    </footer>
+    <script>
+        const toggleButton = document.getElementsByClassName('toggle-button')[0]
+        const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+        toggleButton.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active')
+        })
+    </script>
+
+
 </body>
 
 </html>
