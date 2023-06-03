@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regarding myself</title>
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="contact.css">
+
+    <!-- Label Title Google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tsukimi+Rounded&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="nav">
+            <div id="label-title">
+                <label id="title">Anurag Kushwaha</label>
+            </div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </a>
+              <div class="navbar-links">
+                <ul>
+                  <li><a href="/index.html">Home</a></li>
+                  <li><a href="/about.html">Regarding Myself</a></li>
+                  <li><a href="/contact.html" class="active">Drop me a line</a></li>
+                </ul>
+              </div>
+        </div>
+    </nav>
+
+    <div id="heading">
+        <h1>Contact me</h1>
+    </div>
+
+    <form id="contact-form" action="#">
+
+        <div id="form">
+
+            <div>
+                <label for="name">
+                    <input type="text" name="myName" id="name" placeholder="Enter your name" required>
+                </label>
+            </div>
+            <div>
+                <label for="class"><span>Class: </span>
+                    <select name="myClass" id="class">
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11M">11 - Maths</option>
+                        <option value="11B">11 - Biology</option>
+                        <option value="12M" selected>12 - Maths</option>
+                        <option value="12B">12 - Biology</option>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <label for="email">
+                    <input type="email" name="myEmail" id="email" placeholder="Enter your email" required>
+                </label>
+            </div>
+            <div>
+                <label for="message">
+                    <textarea name="myMessage" id="message" cols="50" rows="7"
+                        placeholder="Enter your message" required></textarea>
+                </label>
+            </div>
+            <div>
+                <button type="submit" id="submit">Submit Now</button>
+            </div>
+
+        </div>
+
+        <div id="form-image">
+            <img src="contact7.webp" alt="Contact">
+        </div>
+
+    </form>
+
+    <footer>
+        <div id="footer">
+            <div id="foot-links">
+                <a href="#">
+                    <img src="telegram logo.png">
+                    Telegram
+                </a>
+                <!-- <a href="#">
+                    <img src="instagram logo.png">
+                    Instagram
+                </a>     -->
+            </div>
+            <p><b>MADE WITH ❤️</b><br>If you want to know about me,
+                <a href="/about.html">click here</a>
+            </p>
+            <span>Copyright&#169; 2023 | All rights reserved</span>
+        </div>
+    </footer>
+
+    <script>
+        const toggleButton = document.getElementsByClassName('toggle-button')[0]
+        const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+        toggleButton.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active')
+        })
+    </script>
+
+
+</body>
+
+</html>

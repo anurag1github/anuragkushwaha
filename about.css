@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #3E3B39;
+    padding: 12px;
+    border-bottom: 3px solid red;
+}
+
+#nav label#title {
+    font-family: 'Gochi Hand', cursive;
+    color: white;
+    font-size: 37px;
+    padding-left: 20px;
+}
+
+#nav li {
+    list-style: none;
+}
+
+#nav li a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Tilt Neon', cursive;
+    color: white;
+    font-size: 19px;
+    padding: 7px 15px;
+    border-radius: 4px;
+}
+
+#nav li a:hover {
+    background-color: #E3242B;
+    transition: .5s;
+}
+
+.active {
+    background-color: #E3242B;
+}
+
+.navbar-links {
+    width: 37%;
+    align-self: center;
+    padding-right: 20px;
+}
+
+.navbar-links ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Hamburger Menu */
+.toggle-button{
+    position: absolute;
+    top: .9rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 24px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+
+#footer {
+    background-color: rgb(230, 230, 230);
+    border-top: 2px solid #d1d1d1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    line-height: 30px;
+}
+
+#footer a {
+    color: black;
+    font-family: 'Tilt Neon', cursive;
+}
+
+#footer p {
+    font-family: 'Tsukimi Rounded', sans-serif;
+}
+
+#footer img {
+    height: 17px;
+}
+
+#foot-links {
+    display: flex;
+    flex-direction: column;
+}
+
+#about hr {
+    color: black;
+    height: 3px;
+    background-color: grey;
+    margin: 8px;
+}
+
+#about {
+    width: 75%;
+    margin: 20px auto;
+}
+
+#intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#intro h1 {
+    font-family: 'Pacifico', cursive;
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+    font-size: 44px;
+    text-decoration: underline;
+}
+
+#intro p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 17px;
+}
+
+#profile-pic {
+    padding: 18px;
+    margin: 20px;
+    border-right: 2px solid #3E3B39;
+}
+
+#profile-pic img {
+    height: 250px;
+    border-top: 2px solid #3E3B39;
+    border-right: 2px solid #3E3B39;
+    border-bottom: 2px solid #E63B60;
+    border-left: 2px solid #E63B60;
+    border-radius: 1000px;
+}
+
+.question {
+    padding: 40px;
+    background-image: linear-gradient(to right, #b3bfc7, #859094);
+    margin: 20px 0 12px 0;
+    border-top: 2px solid #3E3B39;
+    border-left: 2px solid #3E3B39;
+    border-radius: 18px 0 18px 0;
+}
+
+.question h1 {
+    font-family: 'Arizonia', cursive;
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+    font-size: 44px;
+    padding: 4px;
+}
+
+.question p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 17px;
+    padding: 4px;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 701px){
+
+    #nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links{
+        margin: 8px;
+        border-radius: 12px;
+        display: none;
+        width: 100%;
+        padding: 6px 0;
+    }
+
+    .navbar-links li{
+        margin: 12px 0;
+        text-align: center;
+    }
+
+    .navbar-links ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    #nav label#title {
+        font-size: 24px;
+        padding-left: 4px;
+    }    
+
+    .navbar-links.active {
+        display: flex;
+        background-color: #3E3B39;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    #footer{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #footer p {
+        font-family: 'Tsukimi Rounded', sans-serif;
+        padding-left: 10px;
+    }  
+
+
+} 
+
+@media only screen and (max-width: 700px) {
+
+    #nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links{
+        margin: 8px;
+        border-radius: 12px;
+        display: none;
+        width: 100%;
+        padding: 6px 0;
+    }
+
+    .navbar-links li{
+        margin: 12px 0;
+        text-align: center;
+    }
+
+    .navbar-links li a:hover {
+        background-color: #E3242B;
+    }
+
+    .navbar-links ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    #nav label#title {
+        font-size: 24px;
+        padding-left: 4px;
+    }    
+
+    .navbar-links.active {
+        display: flex;
+        background-color: #3E3B39;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    
+    #footer{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #footer p {
+        font-family: 'Tsukimi Rounded', sans-serif;
+        padding-left: 10px;
+    }  
+}
