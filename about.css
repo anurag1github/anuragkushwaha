@@ -54,7 +54,7 @@
 }
 
 /* Hamburger Menu */
-.toggle-button{
+.toggle-button {
     position: absolute;
     top: .9rem;
     right: 1rem;
@@ -65,7 +65,7 @@
     height: 24px;
 }
 
-.toggle-button .bar{
+.toggle-button .bar {
     height: 3px;
     width: 100%;
     background-color: white;
@@ -141,10 +141,10 @@
 
 #profile-pic img {
     height: 250px;
-    border-top: 2px solid #3E3B39;
+    border-top: 2px solid #E63B60;
     border-right: 2px solid #3E3B39;
     border-bottom: 2px solid #E63B60;
-    border-left: 2px solid #E63B60;
+    border-left: 2px solid #3E3B39;
     border-radius: 1000px;
 }
 
@@ -170,14 +170,15 @@
     padding: 4px;
 }
 
-@media only screen and (max-width: 1200px) and (min-width: 701px){
+@media only screen and (max-width: 1250px) and (min-width: 701px) {
 
-    #nav{
+
+    #nav {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .navbar-links{
+    .navbar-links {
         margin: 8px;
         border-radius: 12px;
         display: none;
@@ -185,19 +186,20 @@
         padding: 6px 0;
     }
 
-    .navbar-links li{
+    .navbar-links li {
         margin: 12px 0;
         text-align: center;
     }
 
-    .navbar-links ul{
+    .navbar-links ul {
         flex-direction: column;
         width: 100%;
     }
+
     #nav label#title {
         font-size: 24px;
         padding-left: 4px;
-    }    
+    }
 
     .navbar-links.active {
         display: flex;
@@ -208,7 +210,7 @@
         display: flex;
     }
 
-    #footer{
+    #footer {
         flex-direction: column;
         text-align: center;
     }
@@ -216,19 +218,59 @@
     #footer p {
         font-family: 'Tsukimi Rounded', sans-serif;
         padding-left: 10px;
-    }  
+    }
+
+    #about{
+        width: 87%;
+    }
+
+    #intro {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #profile-pic {
+        border: none;
+        padding: 0px;
+        margin: 0 0 12px 0;
+    }
+
+    #profile-pic img {
+        height: 200px;
+    }
+
+    #intro h1 {
+        font-size: 38px;
+    }
+
+    #introduction {
+        text-align: center;
+    }
+
+    #intro p {
+        font-size: 16px;
+    }
+
+    .question {
+        padding: 24px;
+        margin: 20px 0 12px 0;
+    }
+
+    .question p{
+        text-align: center;
+    }
 
 
-} 
+}
 
 @media only screen and (max-width: 700px) {
 
-    #nav{
+    #nav {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .navbar-links{
+    .navbar-links {
         margin: 8px;
         border-radius: 12px;
         display: none;
@@ -236,7 +278,7 @@
         padding: 6px 0;
     }
 
-    .navbar-links li{
+    .navbar-links li {
         margin: 12px 0;
         text-align: center;
     }
@@ -245,14 +287,15 @@
         background-color: #E3242B;
     }
 
-    .navbar-links ul{
+    .navbar-links ul {
         flex-direction: column;
         width: 100%;
     }
+
     #nav label#title {
         font-size: 24px;
         padding-left: 4px;
-    }    
+    }
 
     .navbar-links.active {
         display: flex;
@@ -263,8 +306,8 @@
         display: flex;
     }
 
-    
-    #footer{
+
+    #footer {
         flex-direction: column;
         text-align: center;
     }
@@ -272,5 +315,46 @@
     #footer p {
         font-family: 'Tsukimi Rounded', sans-serif;
         padding-left: 10px;
-    }  
+    }
+
+    #about{
+        width: 87%;
+    }
+
+    #intro {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #profile-pic {
+        border: none;
+        padding: 0px;
+        margin: 0 0 12px 0;
+    }
+
+    #profile-pic img {
+        height: 170px;
+    }
+
+    #introduction {
+        text-align: center;
+    }
+
+    #intro h1 {
+        font-size: 35px;
+    }
+
+    #intro p {
+        font-size: 15px;
+    }
+
+    .question {
+        padding: 20px;
+        margin: 15px 0 12px 0;
+    }
+
+    .question p{
+        text-align: center;
+    }
+
 }
