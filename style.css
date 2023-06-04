@@ -410,10 +410,15 @@
         padding-left: 10px;
     }  
 
-    @media only screen and (max-width: 380px){
-        .each-subject img{
-            height: 58px;
-        }
-    }
+}
 
+@media only screen and (max-width: 380px){
+    .each-subject img{
+        height: 54px;
+    }
+}
+@media only screen and (max-width: 380px){
+    .each-subject img{
+        height: 46px;
+    }
 }
