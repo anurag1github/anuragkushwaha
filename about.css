@@ -254,6 +254,7 @@
     .question {
         padding: 24px;
         margin: 20px 0 12px 0;
+        border: none;
     }
 
     .question p{
@@ -351,6 +352,7 @@
     .question {
         padding: 20px;
         margin: 15px 0 12px 0;
+        border: none;
     }
 
     .question p{
