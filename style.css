@@ -50,7 +50,7 @@
 
 .navbar-links ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 /* Hamburger Menu */
